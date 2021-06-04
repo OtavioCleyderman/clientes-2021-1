@@ -2,9 +2,8 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
 import logotipo from '../img/customer3.png'
+import MainMenu from './MainMenu';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -18,6 +17,10 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: '15px',
     width: "170px",
     height: "80px",
+  },
+  toolbar: {
+    display: 'flex',
+    justifyContent: 'space-between',
   }
 }));
 
@@ -27,11 +30,9 @@ export default function TopBar() {
   return (
     <div className={classes.root}>
       <AppBar position="static">
-        <Toolbar>
-          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-            <MenuIcon />
-          </IconButton>
+        <Toolbar className={classes.toolbar}>
           <img src={logotipo} alt="clientes" className={classes.logo} />
+          <MainMenu />
         </Toolbar>
       </AppBar>
     </div>

@@ -19,11 +19,15 @@ import './App.css';
    */
 
 import { createMuiTheme, ThemeProvider, makeStyles } from '@material-ui/core/styles';
-import yellow from '@material-ui/core/colors/yellow';
-import purple from '@material-ui/core/colors/purple';
+import yellow from '@material-ui/core/colors/yellow'
+import purple from '@material-ui/core/colors/purple'
 import TopBar from './ui/TopBar.js'
-import FooterBar from './ui/FooterBar.js';
+import FooterBar from './ui/FooterBar.js'
 import Box from '@material-ui/core/Box'
+import ClientesList from './routed/ClientesList'
+import ClientesForm from './routed/ClientesForm'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+
 
 const theme = createMuiTheme({
   palette: {
@@ -41,7 +45,13 @@ const useStyles = makeStyles((theme) => ({
   main: {
     backgroundColor: theme.palette.background.default,
     minHeight: '100vh', // 100% da altura da área de visualização
-
+    paddingBottom: '42px', //Evitar que o footer cubra o conteúdo
+  },
+  routed: {
+    padding: '0 25px',
+    textAlign: 'center',
+    color: theme.palette.text.primary,
+    fontFamily: theme.typography.fontFamily
   }
 }))
 
@@ -49,8 +59,28 @@ function Main() {
   const classes = useStyles()
   return (
     <Box className={classes.main}>
-      <TopBar />
-      <FooterBar />
+      <BrowserRouter>
+        <TopBar />
+        <Box id="routed" className={classes.routed}>
+          <Switch>
+
+            <Route path="/list">
+              <ClientesList />
+            </Route>
+
+            <Route path="/new">
+              <ClientesForm />
+            </Route>
+
+            {/* :id é um parâmetro (espécie de variável de rota) */}
+            <Route path="/edit/:id">
+              <ClientesForm />
+            </Route>
+
+          </Switch>
+        </Box>
+        <FooterBar />
+      </BrowserRouter>
     </Box>
   )
 }
