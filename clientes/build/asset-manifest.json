@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/clientes-2021-1/clientes/build/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/clientes-2021-1/clientes/build/static/js/main.b819e325.chunk.js",
+    "main.js.map": "/clientes-2021-1/clientes/build/static/js/main.b819e325.chunk.js.map",
+    "runtime-main.js": "/clientes-2021-1/clientes/build/static/js/runtime-main.0f693d61.js",
+    "runtime-main.js.map": "/clientes-2021-1/clientes/build/static/js/runtime-main.0f693d61.js.map",
+    "static/js/2.e23d35e3.chunk.js": "/clientes-2021-1/clientes/build/static/js/2.e23d35e3.chunk.js",
+    "static/js/2.e23d35e3.chunk.js.map": "/clientes-2021-1/clientes/build/static/js/2.e23d35e3.chunk.js.map",
+    "static/js/3.2def4b46.chunk.js": "/clientes-2021-1/clientes/build/static/js/3.2def4b46.chunk.js",
+    "static/js/3.2def4b46.chunk.js.map": "/clientes-2021-1/clientes/build/static/js/3.2def4b46.chunk.js.map",
+    "index.html": "/clientes-2021-1/clientes/build/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/clientes-2021-1/clientes/build/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.e23d35e3.chunk.js.LICENSE.txt": "/clientes-2021-1/clientes/build/static/js/2.e23d35e3.chunk.js.LICENSE.txt",
+    "static/media/customer3.460603db.png": "/clientes-2021-1/clientes/build/static/media/customer3.460603db.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0f693d61.js",
+    "static/js/2.e23d35e3.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.b819e325.chunk.js"
+  ]
+}
