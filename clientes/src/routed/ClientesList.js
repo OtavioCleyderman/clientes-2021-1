@@ -31,7 +31,9 @@ const useStyles = makeStyles(theme => ({
     justifyContent: 'flex-end',
     paddingRight: 0,
     margin: theme.spacing(2, 0)
-  }
+  },
+
+
 }));
 
 export default function ClientesList() {
@@ -96,8 +98,8 @@ export default function ClientesList() {
     {
       field: 'id',
       headerName: 'Cód.',
-      align: 'right',
-      headerAlign: 'right',
+      align: 'left',
+      headerAlign: 'left',
       flex: true,
       sortComparator: (v1, v2) => Number(v1) > Number(v2) ? 1 : -1
     },

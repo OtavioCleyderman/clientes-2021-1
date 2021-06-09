@@ -172,8 +172,8 @@ export default function ClientesForm() {
 
 
     if (event.target.id) property = event.target.id
-    if (property === 'bairro') {
-      clienteTemp.bairro = event.target.value.toUpperCase()
+    if (property === 'municipio') {
+      clienteTemp.municipio = event.target.value.toUpperCase()
     }
     else {
       // Quando o nome de uma propriedade de objeto aparece entre [],
